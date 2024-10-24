@@ -1,0 +1,263 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+        <title>Responsive Toy Selling Website</title>
+  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
+        <!--font awesome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+        <!--custome css file link-->
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+      <body>
+        <!--header section starts-->
+        <header class="header">
+          <a href="#" class="logo">KidsZone</a>
+  
+          <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#shop">Shop</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="index.html#footer">Contact Us</a>
+          </nav>
+  
+          <div class="icons">
+            <a href="#" class="fas fa-bars" id="menu-btn"></a>
+            <a href="#" class="fas fa-search" id="search-icon"></a>
+            <a href="#" class="fas fa-heart" id="heart-btn"></a>
+            <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
+            <a href="#" class="fas fa-user" id="login-btn"></a>
+          </div>
+  
+          <form action="" class="search-form">
+            <input type="search" placeholder="search here..." id="search-box" />
+            <label for="search-box" class="fas fa-search"></label>
+          </form>
+  
+          <div class="wishlist">
+            <div class="box">
+              <i class="fas fa-trash"></i>
+              <img src="image/doll1.jpg" alt="" />
+              <div class="content">
+                <h3>Doll</h3>
+                <span class="price">$3</span>
+              </div>
+            </div>
+            <div class="box">
+              <i class="fas fa-trash"></i>
+              <img src="image/puzzel1.jpg" alt="" />
+              <div class="content">
+                <h3>Alphabet Puzzle</h3>
+                <span class="price">$2</span>
+              </div>
+            </div>
+            <a href="#" class="btn">Add to cart</a>
+          </div>
+  
+          <div class="shopping-cart">
+            <div class="box">
+              <i class="fas fa-trash"></i>
+              <img src="image/puzzle2.jpg" alt="" />
+              <div class="content">
+                <h3>Wood Puzzle-5pcs</h3>
+                <span class="price">$3</span>
+                <span class="quantity">qty: <input type="number" value="1" /></span>
+              </div>
+            </div>
+            <div class="box">
+              <i class="fas fa-trash"></i>
+              <img src="image/stuffed1.png" alt="" />
+              <div class="content">
+                <h3>Disney Lilo</h3>
+                <span class="price">$5</span>
+                <span class="quantity">qty: <input type="number" value="3" /></span>
+              </div>
+            </div>
+            <div class="box">
+              <i class="fas fa-trash"></i>
+              <img src="image/puzzle4.webp" alt="" />
+              <div class="content">
+                <h3>New Nine Puzzle</h3>
+                <span class="price">$3.72</span>
+                <span class="quantity">qty: <input type="number" value="1" /></span>
+              </div>
+            </div>
+            <div class="total">total: $21.72</div>
+            <a href="checkout.html" class="btn">checkout</a>
+          </div>
+  
+          <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box" />
+            <input type="password" placeholder="your password" class="box" />
+            <p>forget your password?<a href="#click-here">click here</a></p>
+            <p>don't have an account? <a href="#create-now">create now</a></p>
+            <a href="#" class="btn">Login Now</a>
+          </form>
+          <form action="" class="forgot-password">
+            <h3>Forgot Password</h3>
+            <input type="email" placeholder=" email" class="box" />
+            <p>don't have an account? <a href="#create-now">create now</a></p>
+            <p>already have an account? <a href="#login-here">Login here</a></p>
+            <a href="#" class="btn">Submit</a>
+          </form>
+  
+          <form action="" class="registration-form">
+            <h3>Register Now</h3>
+            <input type="text" placeholder=" name" class="box" />
+            <input type="email" placeholder=" email" class="box" />
+            <input type="text" placeholder=" mobile number" class="box" />
+            <input type="text" placeholder="your delivery" class="box" />
+            <input type="text" placeholder="postal code" class="box" />
+            <input type="password" placeholder=" password" class="box" />
+            <input type="password" placeholder="confirm password" class="box" />
+            <p>already have an account? <a href="#login-here">Login here</a></p>
+            <p>forget your password?<a href="#click-here">click here</a></p>
+            <a href="#" class="btn">Register now</a>
+          </form>
+        </header>
+        <!--header section ends-->
+
+        <!--checkout section starts-->
+  
+        <section class="checkout">
+          <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form>
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <div class="row">
+                          <div class="col-50">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="Enter First Name" />
+                          </div>
+                          <div class="col-50">
+                              <label for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lname" placeholder="Enter Last Name" />
+                            </div>
+                      </div>
+                      <label for="email"> Email</label>
+                      <input type="text" id="email" name="email" placeholder="Enter Email" />
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="Enter Address" />
+                      <label for="city">City</label>
+                      <input type="text" id="city" name="city" placeholder="Enter City" />
+  
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY" />
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001" />
+                        </div>
+                      </div>
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color: navy"></i>
+                        <i class="fa fa-cc-amex" style="color: blue"></i>
+                        <i class="fa fa-cc-mastercard" style="color: red"></i>
+                        <i class="fa fa-cc-discover" style="color: orange"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe" />
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September" />
+  
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018" />
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352" />
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="col-50">
+                      <h3 class="title"><input type="checkbox" class="chck-box">Ship to differect Address?</h3>
+                    </div>
+  
+                  </div>
+                  <label> <input type="checkbox" checked="checked" name="sameadr" /> Shipping address same as billing </label>
+                  <input type="submit" value="Continue to checkout" class="btn" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--checkout section ends-->
+  
+       <!--footer section starts-->
+       <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="logo">KidsZone</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, neque! Eligendi exercitationem sit a placeat, illum nesciunt possimus error velit officiis aliquid fugit animi similique ipsa assumenda eaque et maiores!</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> 011-2789-633</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> kidszoneinfo@gmail.com</a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> No:7A,De Mel Mawatha,Colombo 07</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> Home</a>
+                <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> About</a>
+                <a href="#shop" class="links"> <i class="fas fa-arrow-right"></i> Shop</a>
+                <a href="#blog" class="links"> <i class="fas fa-arrow-right"></i> Blog</a>
+               
+    
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+
+            <div class="credit">
+                created by <span>Dhanushi Liyanage</span> | all rights reserved.
+            </div>
+
+
+
+        </div>
+       </section>
+       <!--footer section starts-->
+
+        <script type="text/javasript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!--custome js file link-->
+        <script src="js/script.js"></script>
+      </body>
+    </html>
+  </DOCTYPE>
+  
